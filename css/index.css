@@ -1,0 +1,374 @@
+
+* {
+    background-color: lightgray;
+    font-family: 'lato','san-serif';
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+}
+
+
+nav ul {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+nav ul li{
+    
+    height: 60px;
+    background-color: black;   
+    
+}  
+
+nav ul li a{
+    
+    display: inline-block;
+    font-size: 16px;   
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+        
+    
+}    
+
+
+  
+
+a:hover{
+    color: brown;
+    
+}
+   
+.mijn_naam{
+    
+    font-size: 20px;
+    padding: 15px;
+    font-weight: bold;
+    display: inline-block;
+    background-color: black;
+    color: brown;
+}
+
+section{
+    padding: 70px 20px;
+    
+}
+
+
+.welkom_tekst{
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.welkom_tekst h1{
+    font-size: 40px;
+}
+
+
+
+.welkom_tekst p{
+    margin-bottom: 40px;
+}
+
+.knop_1{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+
+.wrapper {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+    gap: 20px;
+    
+    
+}
+
+
+.container {
+    display: flex;
+    
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.overmij{
+    display: block;
+    margin: auto;
+    
+    
+}
+
+.overmij img{
+    border-radius: 150px 0 200px 0 ;    
+    height: 350px;
+    width: auto;
+    
+    border: 3px solid brown;
+    display: block;
+    margin: auto;
+    
+    
+    
+}
+
+.welkom_afb img {
+        height: auto;
+        width: 250px;
+        border: 3px solid brown;  
+        border-radius: 50%;     
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.welkom_afb:hover {
+        opacity: 0.5;
+    }
+
+.overmij p{
+    font-size: 1rem;
+    
+    max-width: 600px;
+    padding: 15px;
+}
+
+
+wrapper.h1{
+    display: flex;
+}
+
+.mijn_project{
+    
+    min-height: 420px;
+    max-width: 600px;
+    background-color: brown;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.mijn_project img{
+    height: auto;
+    width: 100%;
+    
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    
+}
+
+.mijn_project > .tekst {
+    
+    width: 100%;
+    height: auto;
+   
+    display: flex;
+    margin: auto;
+    
+   
+   
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px) ;
+    opacity: 0.4;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.tekst p {
+    
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+   
+}
+    
+
+div.mijn_project:hover {
+   
+        box-shadow: 0 4px 8px 0 rgb(74, 68, 59);
+    
+}
+
+
+
+
+h1{
+    font-size: 3rem;
+    padding: 20px;
+}
+
+.contact_me {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.icon_1>svg{
+    width: 20px;
+    height: auto;
+    padding: 15px;
+}
+
+.icon_2>svg{
+    width: 20px;
+    height: auto;
+    padding: 15px;
+}
+.icon_3>svg{
+    width: 25px;
+    height: auto;
+    padding: 15px;
+}
+
+footer p{
+    height: 40px;
+    padding: 15px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    
+
+    
+
+    
+
+    .nav ul li{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+
+    .nav ul li a{
+        color: white;       
+        width: 100%;
+        font-size: 14px;
+        padding: 8px;
+        margin-top: 10px;
+    }
+
+    h1{
+        top: 25px;
+        font-size: 24px;
+    }
+
+    .mijn_project{
+        width: fit-content;
+        min-height: 300px;
+        padding: 5px;
+    }
+
+    .mijn_project img{
+        max-width: 100%;
+       height: auto;
+       margin-bottom: 10px;
+        
+    }
+
+    .mijn_project .tekst {
+        width: 100%;
+        margin: auto;
+       justify-content: center;
+       align-items: center;
+       font-size: 14px;
+    }
+
+    .overmij h1{
+        justify-content: center;
+        
+    }
+
+    .overmij p{
+        font-size: 14px;
+        padding: 10px;
+        max-height: 600px;
+    }
+
+    .overmij {
+        
+        min-height: 200px;
+        max-height: 400px;
+        width: 100%;
+    }
+
+    .overmij img{
+        border-radius: 50%;    
+        height: 200px;
+        width: 200px;
+        background-color: brown;
+        border: 3px solid black;
+       
+    }
+
+    .welkom_afb {
+        display: block;
+        margin: auto;
+    }
+
+    .welkom_tekst h1{
+        font-size: 18px;
+        
+    }
+
+    .welkom_tekst {
+        
+        min-height: 300px;
+        max-height: fit-content;
+    }
+    
+  }
