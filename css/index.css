@@ -4,7 +4,9 @@
     font-family: 'lato','san-serif';
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 
 nav{
@@ -64,7 +66,7 @@ a:hover{
 }
 
 section{
-    padding: 70px 20px;
+    padding: 60px 20px;
     
 }
 
@@ -116,6 +118,8 @@ section{
 }
 
 
+
+
 .container {
     display: flex;
     
@@ -128,20 +132,28 @@ section{
 .overmij{
     display: block;
     margin: auto;
+    overflow: hidden;
     
-    
+    align-items: center;
 }
 
 .overmij img{
-    border-radius: 150px 0 200px 0 ;    
-    height: 350px;
-    width: auto;
+    border-radius: 200px 0 200px 0 ;    
+    height: auto;
+    width: 250px;
     
     border: 3px solid brown;
     display: block;
     margin: auto;
-    
-    
+ 
+}
+
+.overmij p{
+    font-size: 1rem;
+    height: auto;
+    max-width: 600px;
+    padding: 10px;
+    display: block;
     
 }
 
@@ -158,17 +170,10 @@ section{
         opacity: 0.5;
     }
 
-.overmij p{
-    font-size: 1rem;
-    
-    max-width: 600px;
-    padding: 15px;
-}
 
 
-wrapper.h1{
-    display: flex;
-}
+
+
 
 .mijn_project{
     
@@ -176,6 +181,8 @@ wrapper.h1{
     max-width: 600px;
     background-color: brown;
     display: block;
+    
+    align-items: center;
     margin: auto;
     overflow: hidden;
     padding: 10px;
@@ -184,8 +191,8 @@ wrapper.h1{
 .mijn_project img{
     height: auto;
     width: 100%;
-    
     display: block;
+    flex-direction: column;
     margin: auto;
     margin-bottom: 10px;
     justify-content: center;
@@ -242,25 +249,20 @@ h1{
 .contact_me {
     display: flex;
     flex-direction: row;
-    padding: 15px;
+    
 }
 
-.icon_1>svg{
-    width: 20px;
-    height: auto;
-    padding: 15px;
-}
-
-.icon_2>svg{
-    width: 20px;
-    height: auto;
-    padding: 15px;
-}
-.icon_3>svg{
+.icon_1 svg, 
+.icon_2 svg, 
+.icon_3 svg {
     width: 25px;
-    height: auto;
-    padding: 15px;
+    height: 25px;
+    padding: 0;
+    margin: 10px;
+    fill: black;
 }
+
+
 
 footer p{
     height: 40px;
@@ -281,12 +283,8 @@ footer p{
 
 @media screen and (max-width: 768px) {
 
-    
-    
-    
-    
-    
 
+    
     nav ul li{
         display: flex;
         flex-direction: column;
@@ -303,47 +301,55 @@ footer p{
     }
 
     h1{
-        top: 25px;
-        font-size: 24px;
+        font-size: 18px;
     }
 
+    #portfolio {
+        scroll-margin-top: 50px ;
+    }
+    
     .mijn_project{
-        width: fit-content;
-        min-height: 300px;
-        padding: 5px;
+        flex-direction: column;
+        min-height: 250px;
+        max-width: 75%;
+        margin: auto;
+        align-items: center;
     }
-
+    
     .mijn_project img{
-        max-width: 100%;
-       height: auto;
+       max-width: 100%;
+       max-height: 75%;
        margin-bottom: 10px;
         
     }
 
-    .mijn_project .tekst {
-        width: 100%;
-        margin: auto;
+    .tekst {
+           
        justify-content: center;
        align-items: center;
-       font-size: 14px;
+       font-size: 12px;
     }
 
-    .overmij h1{
-        justify-content: center;
-        
+    #over_mij {
+        scroll-margin-top: 50px ;
     }
+
+    
 
     .overmij p{
-        font-size: 14px;
+        font-size: 12px;
         padding: 10px;
-        max-height: 600px;
+        max-height: 75%;
+        width: auto;
     }
 
     .overmij {
         
-        min-height: 200px;
-        max-height: 400px;
-        width: 100%;
+        
+        
+        margin: auto;
+        max-width: 100%;
+        justify-content: center;
     }
 
     .overmij img{
@@ -360,14 +366,11 @@ footer p{
         margin: auto;
     }
 
-    .welkom_tekst h1{
-        font-size: 18px;
-        
-    }
+    
 
     .welkom_tekst {
         
-        min-height: 300px;
+        min-height: 200px;
         max-height: fit-content;
     }
     
