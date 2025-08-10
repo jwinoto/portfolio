@@ -294,7 +294,7 @@ footer p{
 @media screen and (max-width: 768px) {
 
     #home {
-        scroll-margin-top: 50px ;
+        margin: auto;
     }
     
     nav ul li{
