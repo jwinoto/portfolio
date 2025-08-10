@@ -66,32 +66,50 @@ a:hover{
 }
 
 section{
-    padding: 60px 20px;
+    padding: 20px 20px;
     
 }
 
 
-.welkom_tekst{
+
+.wrapper {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;   
+    gap: 20px;
     
     
+}
+
+.container {
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.welkom_txt {
+       
     text-align: center;
     
 }
 
-.welkom_tekst h1{
+.welkom_txt p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.welkom_txt h1{
     font-size: 40px;
     
 }
 
-
-
-.welkom_tekst p{
-    margin-bottom: 40px;
-    margin-top: 20px;
-}
-
 .welkom_afb img {
-        height: auto;
+        height: 250px;
         width: 250px; 
         border-radius: 50%;     
         justify-content: center;
@@ -112,36 +130,8 @@ div.welkom_afb:hover {
     text-decoration: none;
     font-size: 1rem;
     border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-
-
-
-
-.wrapper {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;   
-    gap: 20px;
-    
-    
-}
-
-
-
-
-.container {
-    display: flex;   
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    gap: 20px;
-    flex-wrap: wrap;
 }
 
 .overmij{
@@ -293,8 +283,11 @@ footer p{
 
 @media screen and (max-width: 768px) {
 
-    #home {
-        scroll-margin-top: auto;
+    .container {
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
     }
     
     nav ul li{
@@ -315,6 +308,9 @@ footer p{
     h1{
         font-size: 18px;
     }
+
+
+
 
     #portfolio {
         scroll-margin-top: 50px ;
@@ -355,9 +351,9 @@ footer p{
     
 
     .overmij p{
-        font-size: 12px;
+        font-size: 14px;
         padding: 10px;
-        max-height: 75%;
+        max-height: 100%;
         width: auto;
     }
 
@@ -383,22 +379,12 @@ footer p{
 
     
 
-    .welkom_afb img{
-      
-        display: block;
-        margin:auto;
+    .container {
+        max-height: 75%;
     }
 
-    .welkom_tekst {   
-        
-        min-height: 100vh;
-        display: block;
-        margin: auto;
-        
-    }
-
-    .welkom_tekst h1{
-        padding: 15px;
+    .welkom  h1{
+        font-size: 18px;
     }
     
     
