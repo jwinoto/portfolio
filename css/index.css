@@ -55,7 +55,7 @@ a:hover{
     
 }
    
-.mijn_naam{
+.mijn_logo {
     
     font-size: 20px;
     padding: 15px;
@@ -293,7 +293,9 @@ footer p{
 
 @media screen and (max-width: 768px) {
 
-
+    #home {
+        scroll-margin-top: 50px ;
+    }
     
     nav ul li{
         display: flex;
@@ -384,7 +386,7 @@ footer p{
     .welkom_afb img{
       
         display: block;
-        margin-top: 50%;
+        margin-top: 50px;
     }
 
     .welkom_tekst {   
