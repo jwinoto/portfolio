@@ -294,7 +294,7 @@ footer p{
 @media screen and (max-width: 768px) {
 
     #home {
-        margin: auto;
+        scroll-margin-top: auto;
     }
     
     nav ul li{
@@ -386,7 +386,7 @@ footer p{
     .welkom_afb img{
       
         display: block;
-        margin-top: 50px;
+        margin:auto;
     }
 
     .welkom_tekst {   
