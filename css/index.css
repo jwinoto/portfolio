@@ -353,29 +353,21 @@ footer p{
         right: 5px;               
     }
     
-    
-    
-
     h1{
         font-size: 18px;
     }
 
-
     #portfolio {
-        scroll-margin-top: 20px ;
-        
+        scroll-margin-top: 20px ;    
     }
 
     .projecten {
-        grid-template-columns: 1fr;
-        
+        grid-template-columns: 1fr;   
      }
     
     .project{
-        padding-top: 10px; 
-        
-        min-height: fit-content;
-        
+        padding-top: 10px;         
+        min-height: fit-content;        
     }
 
     .project h1{
@@ -385,16 +377,13 @@ footer p{
     
     .tekst{
         margin-top: 10px;
-        margin-bottom: 10px;
-        
+        margin-bottom: 10px;        
     }
+
     .tekst p{       
        padding: 10px;
-       font-size: 12px;
-       
+       font-size: 12px;       
     }
-
-
 
     .overmij_links {
       
@@ -406,18 +395,14 @@ footer p{
         left: 0;
         top: 0;
         
-    }
-
-    
+    }    
 
     .overmij_rechts p{
         font-size: 14px;
         
         width: 100%;
         right:  20px;
-        left: 20px;
-            
-        
+        left: 20px;                    
     }
 
     .overmij_rechts h1{
@@ -427,10 +412,20 @@ footer p{
        
     }
 
-
     .welkom  h1{
         font-size: 18px;
-    }
-    
+    }    
     
   }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .container-portfolio {
+    justify-content: center; /* mooi centreren */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .container-portfolio {
+    justify-content: flex-start; /* content bovenaan */
+  }
+}
