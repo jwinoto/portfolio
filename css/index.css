@@ -190,6 +190,7 @@ div.welkom_afb:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    width: 100%;
 }
 .titel h1 {
     padding-top: 40px;
@@ -428,6 +429,8 @@ footer p{
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .container-p {
-    justify-content: flex-start; /* content bovenaan */
+    justify-content: flex-start; 
+    align-items: center;
+    text-align: center;
   }
 }
