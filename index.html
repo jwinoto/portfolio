@@ -12,64 +12,66 @@
 
     </head>
     <body>
-        
-            
 
+    <!--Nav Menu-->
             <nav>
-                <div class="mijn_logo">JW</div>
+                
+                <div class="mijn_logo">                   
+                    <a href="#home">JW</a>                
+                </div>
 
                
-                <ul>
+                <ul id="nav_links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#over_mij">Over mij</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>                  
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+
+                <div class="hamburger" id="hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+                    </svg>
+                </div>
                
             </nav>
       
 
-        
+    <!--Home-->       
         <section id="home" class="wrapper">
             
          <div class="container">
 
-            <div class="welkom_afb">
-                <img src="afb/jw_4.jpg">
-            </div>
-            
-
             <div class="welkom_txt">   
-                
-                
+           
                 <h1>Hey, Ik ben Jeanne</h1>
                
                 <p>Een Front-end Developer in opleiding met passie <br>
                     voor het bouwen van moderne en gebruikvriendelijke websites. 
                 </p> 
-                <a href="#portfolio" class="knop_1">Bekijk mijn werk</a>          
+                <a href="#portfolio" class="btnPortfolio">Bekijk mijn werk</a>          
             </div>
+            
+            <div class="welkom_afb">
+                <img src="afb/jeanne-2.png">
+            </div>
+
 
          </div>   
 
             
         </section>
 
+    <!--Over mij-->
         <section id="over_mij" class="wrapper">
-                               
-                
-
-            <div class="container">  
-
-                
-                                                       
-                <div class="overmij">
-                    <h1>Over Mij</h1>
-                    <img src="afb/laptop-1.png" alt="laptop">                  
+             <div class="container">  
+                <div class="overmij_links">
+                                                      
                 </div>
                   
-                <div class="overmij">
-                    
+                <div class="overmij_rechts">
+                    <h1>Over Mij</h1>   
                     <p>
                         Hallo, Mijn naam is Jeanne.
                     </p>
@@ -101,52 +103,69 @@
             </div>
         </section>   
 
+    <!--mini projecten-->
         <section id="portfolio" class="wrapper">
-         
-            <h1>Projecten</h1>
+            <div class="titel">
+                <h1>Projecten</h1>
+            </div>
+            
                 
             <div class="projecten">
-         
-                <div class="mijn_project">
-
-                    <div class="project_afbeelding">
+                
+                <div class="project">
                     <a href="https://jwinoto.github.io/jw_fotografie/index.html" target="_blank">
-                        <img src="afb/jw_fotografie.png">
+                    <img src="afb/jw_fotografie.png" alt="fotografie">
                     </a>
-                    </div>
 
                     <div class="tekst">
                     <p> Deze website begon als een huiswerk opdracht voor mijn opleiding tot Front-end Developer, 
-                        met een doel om kennis te maken met het Bootstrap-framework.
-                        Daarna heb ik het aangepast tot persoonlijke fotografie portfolio.
+                        met een doel om kennis te maken met het Bootstrap-framework.                    
                     </p>
-                    </div>
-
+                    </div>                   
                 </div>
 
-            
-                <div class="mijn_project">
-
-                    <div class="project_afbeelding">                    
-                    <a href="https://www.figma.com/proto/My7QJu0BnVV1Mhz5180dnk/Untitled?page-id=0%3A1&node-id=1-2&p=f&viewport=319%2C318%2C0.5&t=wIaHZKrapWAoiUOM-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A2" target="_blank">                                        
-                        <img src="afb/coffee_corner.png" alt="koffie" >
+                <div class="project">
+                    <a href="https://www.figma.com/proto/My7QJu0BnVV1Mhz5180dnk/Untitled?page-id=0%3A1&node-id=25-69&p=f&viewport=95%2C343%2C0.15&t=W2UDlkLbbka6qDaD-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A2" target="_blank">
+                    <img src="afb/coffee_corner.png" alt="coffee_corner">
                     </a>
+
+                    <div class="tekst">                   
+                    <p> Mijn eerste project in Figma, om kennis te maken met Figma. 
+                        Een leuk project om mijn UI/UX skills te oefenen en vertrouwd te raken met design tools.
+                    </p>
                     </div>
+                </div> 
+
+                <div class="project">
+                    <a href="https://jwinoto.github.io/weer_app/index.html" target="_blank">
+                    <img src="afb/weer_app.png" alt="weather app">
+                    </a>
 
                     <div class="tekst">
-                    <p>Een fictief website ontwerp dat ik met Figma heb gemaakt als oefening in 
-                       UI/UX en visueel ontwerp tijdens mijn opleiding.                  
+                    <p> Weer App (Mini-project) - Haal het actuele weer van elke stad op.
+                        Het is gemaakt met AJAX en jQuery, en gebruikmakend van de OpenWeatherMap API.
                     </p>
-                    </div>
-
+                    </div>                    
                 </div>
 
+                <div class="project">
+                    <a href="https://jwinoto.github.io/todo_list/index.html" target="_blank">
+                    <img src="afb/todo_lijst.png" alt="todo list">
+                    </a>
+
+                    <div class="tekst">
+                    <p> Todo Lijst (Mini-project) - Een eenvoudige to-do lijst gebouwd met HTML, CSS en JavaScript, 
+                        waarbij ik gebruikmaak van DOM-manipulatie om taken toe te voegen, 
+                        af te vinken en te verwijderen.             
+                    </p>
+                    </div>
+                </div>
+                
             </div>
 
         </section>
 
-        
-
+    <!--Contact-->  
         <section id="contact" class="wrapper">
             <h1>Heb je een vraag?</h1>
             <p>Laat gerust een berichtje achter, ik reageer zo snel mogelijk!</p>
@@ -190,7 +209,7 @@
     <p>Developed with ❤️ by Jeanne</p>
 </footer>
 
+     <script src="script.js"></script>  
+</body>
 
-        
-    </body>
 </html>
