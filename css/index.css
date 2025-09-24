@@ -306,7 +306,7 @@ footer p{
         max-height: 100%;
         display: flex;
         flex-direction: column-reverse;
-        
+        justify-content: flex-start;
     }
 
     .welkom_afb img {
