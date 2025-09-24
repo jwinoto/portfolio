@@ -103,10 +103,11 @@ a:hover{
     display: flex;   
     align-items: center;
     justify-content: center;
-    min-height: 100vh;   
-    
+    min-height: 100vh;      
     
 }
+
+
 
 .welkom_txt {
        
@@ -180,34 +181,37 @@ div.welkom_afb:hover {
     font-size: 1rem;
     height: auto;
     min-width: auto;
-    width: 100%;
+    width: 90%;
     max-width: 100%;
     
 }
 
 
 .titel h1 {
-    margin-top: 35px;
+    padding-top: 40px;
     font-size: 2rem;
+    text-align: center;
 }
 
 .projecten {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin: 25px;
-    align-items: stretch;
+    width: 90%;
     
+    gap: 10px;
+    align-items: stretch;
+    justify-items: center;
 }
 
 .project {
-    width: 95%;
+    width: 90%;
     height: auto;
     padding: 10px;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     background: linear-gradient(135deg, #dad4d400,  #e3d4b4);
     
@@ -216,16 +220,12 @@ div.welkom_afb:hover {
 .project img {
     width: 100%;
     height: auto;
-    display: block;
-    
-    
+    display: block;   
 }
 
 .tekst {
     
-    width: 95%;
-    
-    
+    width: 95%; 
     padding : 10px 10px;
     
     display: flex;
@@ -244,9 +244,9 @@ div.welkom_afb:hover {
 
 .tekst p {
     
-    margin-left: 5px;
+    
     font-size: 1rem;    
-    width: 90%;  
+    width: 100%;  
     
 }
     
@@ -256,10 +256,7 @@ div.project:hover {
     
 }
 
-#portfolio h1{
-    font-size: 2rem;
-    padding-top: 35px;
-}
+
 
 .contact_me {
     display: flex;
@@ -302,10 +299,6 @@ footer p{
 }
 
 
-
-
-
-
 @media screen and (max-width: 768px) {
 
     .container {
@@ -313,7 +306,6 @@ footer p{
         max-height: 100%;
         display: flex;
         flex-direction: column-reverse;
-        
         
     }
 
@@ -381,7 +373,7 @@ footer p{
     
     .project{
         padding-top: 10px; 
-        justify-content: center;
+        
         min-height: fit-content;
         
     }
