@@ -419,13 +419,13 @@ footer p{
   }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .container-portfolio {
+  .container {
     justify-content: center; /* mooi centreren */
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .container-portfolio {
+  .container {
     justify-content: flex-start; /* content bovenaan */
   }
 }
