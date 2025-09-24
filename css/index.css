@@ -107,8 +107,6 @@ a:hover{
     
 }
 
-
-
 .welkom_txt {
        
     text-align: center;
@@ -186,7 +184,12 @@ div.welkom_afb:hover {
     
 }
 
-
+/* Portfolio Projecten */
+.container-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 .titel h1 {
     padding-top: 40px;
     font-size: 2rem;
