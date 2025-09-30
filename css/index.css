@@ -134,7 +134,7 @@ a:hover{
 }
 
 .typewriter{     
-    font-size: clamp(20px,5vw,30px);
+    font-size: clamp(16px,5vw,30px);
     font-family: monospace;   
     overflow: hidden;
     display: inline-block;
