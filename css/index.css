@@ -1,12 +1,14 @@
 
 html, body{   
-    height: 100vh;
-    background-color: #d6d5c9;
+    min-height: 100vh;
+    background-size: cover;
     font-family: 'lato','san-serif';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
 
 nav{
     display: flex;
@@ -14,7 +16,8 @@ nav{
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: black;
+    background: linear-gradient(to bottom,  #ffcad4, transparent); 
+    z-index: 10;
 }
 
 nav ul {
@@ -22,7 +25,7 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: transparent; 
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -30,101 +33,157 @@ nav ul {
 
 nav ul li{
     
-    height: 60px;
-    background-color: black;  
+    height: 80px;
+    background-color: transparent; 
     
 }  
 
 nav ul li a{
     
     display: inline-block;
-    font-size: 16px;   
-    padding: 15px;
-    color: white;
+    font-size: 1rem;   
+    padding: 20px;
+    color: black;
+    font-weight: bold;
     text-decoration: none;
-    background-color: black;    
+    background-color: transparent; 
     
 }      
 
 a:hover{
-    color: #eb5e28;   
+    color: white;   
 }
    
 .mijn_logo {
     
-    font-size: 20px;
-    padding: 15px;
-    font-weight: bold;
+    padding: 5px;   
     display: flex;
     flex-direction: row;
-    background-color: black;
-    color: #eb5e28;
-    text-decoration: none;
+    background-color: transparent;
+        
 }
 
-.mijn_logo a{
-    text-decoration: none;
-    color: white;
+.mijn_logo img{
+    width: auto;
+    height: 60px;
+    
 }
 
-.mijn_logo a:visited {
-    color: #eb5e28;
-}
+
 
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
-    background-color: black;
+    background-color: #ffcad4;
 }
 
 .wrapper {
+    
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;   
-    gap: 10px;   
-    
+     
 }
 
 .container {
     display: flex;   
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;      
+    height: 100vh;   
+    padding: 10px;  
+    gap: 10px;
     
+}
+
+section{
+    scroll-margin-top: 70px;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+#home {
+    background-color:transparent;
+    
+}
+
+.home {
+    display: flex;
+    flex-direction: row;   
+    align-items: center;  
+    justify-content: center;  
+    padding: 10px;
+    gap: 25px;    
+    height: 100%;
+    width: 80%;
+    background-color: transparent;
+   
+}
+
+.mijn_naam{
+    color: #ffcad4;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: arial;
 }
 
 .welkom {      
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
+    align-items: flex-start;  
     width: 100%;
+    max-height: 100vh;
+    padding-right: 0;
+    
 }
-
 
 
 .welkom h1{
-    font-size: clamp(32px,6vw,60px);
+    font-size: 3.5rem;
+    font-family: Arial;
+    margin: 0;
+}
+
+.welkom h5{
+    
+    font-size: 1rem;
     font-family: arial;
-    padding: 5px;
+    margin: 1.5rem 0;
 }
 
-.welkom h2{
-    padding-bottom: 55px;
-    font-size: clamp(16px,6vw,30px);
+.foto{
+    display: flex;
+    
+    justify-content: center;
+   
+    align-items: center;  
+    width: 40vw;   
+      
+    aspect-ratio: 1/1;
+    
+    margin-top: 40px;
+    background: linear-gradient(to bottom, black, #ffcad4, transparent);
+    border-radius: 50%;
 }
-
-.mijn_naam {
-    color: #eb5e28;
-    font-weight: bold;
+.foto img{
+    
+    width: 40vw;
+   
+    aspect-ratio: 1/1;
+    background-color: transparent;
+    border-radius: 50%;
+    
+    
 }
 .btnPortfolio{
-    background-color: black;
-    color: white;
+    background-color: #ffcad4 ;
+    color: black;
+    font-weight: bold;
     padding: 10px;
     width: 120px;
     text-decoration: none;
@@ -134,124 +193,153 @@ a:hover{
     align-items: center;
 
 }
-
-.typewriter{     
-    
-    font-family: monospace;   
-    overflow: hidden;
-    display: inline-block;
-    white-space: nowrap;
-    width: 32ch;
-    
-    animation: typing 4s steps(32,end) forwards;
+.fade_in{
+    opacity: 0;
+    animation: fadeIn 4s forwards;
+    animation-delay: 2s;
 }
 
-@keyframes typing {
-    from { width: 0;}
-    to { width: 32ch;}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
 
-.overmij_links {
-    background-image: url('../afb/laptop-1.png');
-    background-size: cover;
-    background-position-x: center;
-  
-    height: 100vh;
-    width: 40%;   
-}
-
-.overmij_rechts h1{
-    font-size: 2rem;
-    padding-left: 0;
-    padding-top: 45px;
-}
 
 
-.overmij_rechts {
-    flex: 1;   
-    height: 100vh;
-    padding: 0 20px;
-}
-
-.overmij_rechts p {
-    font-size: 1rem;
-    height: auto;
-    min-width: auto;
-    width: 90%;
-    max-width: 100%;
+#over_mij{
+    background: linear-gradient(to bottom, transparent, #ffcad4, transparent );
     
 }
 
-/* Portfolio Projecten */
-.container-p {
+.over_mij {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    gap: 10px;   
+    width: 100%;
+    min-height: 100%;
 }
+
+.skills{
+    
+   width: 90%;  
+   padding: 10px; 
+   min-height: 10vh;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+   gap: 10px;
+   justify-items: center;
+   border-radius: 15px;
+   background-color: whitesmoke; 
+}
+
+.skill svg{
+    
+    fill: #ffcad4;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    
+}
+
+.about_text {
+    width: 90%;
+    min-height: 30vh;  
+    border-radius: 15px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+.about_text p {
+    font-size: 1rem;
+    height: auto;
+    padding: 0 20px ;
+   
+    
+    max-width: 95%;
+    
+}
+
+/* Portfolio Projecten */
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+    width: 90%;
+    min-height: 100%;
+    
+}
+
 .titel h1 {
-    padding-top: 40px;
+    padding: 15px 5px;   
     font-size: 2rem;
     text-align: center;
 }
 
 .projecten {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    display: grid;   
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     width: 100%;
-    
+    padding: 10px;
     gap: 10px;
     align-items: stretch;
     justify-items: center;
+    min-height: 100%;
 }
 
 .project {
-    width: 90%;
+    position: relative;    
     height: auto;
-    padding: 10px ;
-    border: 1px solid #eb5e28;
-    display: flex;
-    flex-direction: column;
+    padding: 10px;   
+    display: flex;    
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    background: linear-gradient(135deg, #da754d, #e3d4b4);
-    
+    gap:10px;    
 }
 
 .project img {
-    width: 100%;
+    width: 60%;
     height: auto;
-    display: block;   
+    padding: 10px;
+    display: block;
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
 }
 
 .tekst {
-    
-    width: 95%; 
-    padding : 10px 10px;
-    
+    position: absolute;
+    inset: 0;
+    width: 100%;     
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    background : linear-gradient(135deg, #ADA996, #F2F2F2, #DBDBDB, #EAEAEA);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    align-items: center;    
     pointer-events: none;
-         
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background: linear-gradient( 120deg, rgba(255, 202, 212, 0.8), whitesmoke);;
+    border-radius: 10px;
 }
 
 .tekst p {
         
     font-size: 1rem;    
-    width: 100%;  
+    width: 90%;  
+    text-align: center;
+}
+.project:hover .tekst {
+    opacity: 1;
     
 }
-    
-div.project:hover {   
-    box-shadow: 0 4px 8px 0 rgba(147, 145, 143, 0.908);    
+.project:hover img {   
+    transform: scale(1.1);
+    cursor: pointer;    
 }
+
 
 .contact_me {
     display: flex;
@@ -270,26 +358,67 @@ div.project:hover {
 }
 
 .icon_1 svg:hover {
-    fill: #eb5e28;
+    fill: #ffffff;
 } 
 .icon_2 svg :hover {
-    fill: #eb5e28;
+    fill: #ffffff;
 } 
 .icon_3 svg :hover {
-    fill: #eb5e28;
+    fill: #ffffff;
 }
 
+#contact{
+    
+    background-color: transparent ;
+    height: 80dvh;
 
-
-footer p{
-    height: 40px;
-    padding: 10px;
-    font-size: 16px;
-    background-color: black;
-    color: white;
+    
+}
+.contact {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;   
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(to bottom, transparent, #ffcad4, transparent);
+}
+.contact_titel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;      
+    width: 80%;
+    
+}
+.socials{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;    
+       
+    
+}
+
+footer {
+    
+    height: 40px;
+    padding: 10px;
+    background: linear-gradient(to bottom, transparent, #ffcad4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    margin: 0;
     text-align: center;
+    font-size: 1rem;   
+    font-weight: bolder; 
+    color: black;
     
 }
 
@@ -298,128 +427,221 @@ footer p{
 
     .container {
         width: 100%;
-        max-height: 100%;
+        min-height: 100%;
+        
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 5px;
+        
     }
 
-    .welkom h1{
-        font-size: 1.5rem;
-    }
-    .welkom h2{
-        font-size: 0.75rem;
-    }
-
+    
     nav {
         justify-content: space-between;
         align-items: center;
+        
     }
 
     nav ul {
         display: none;
         position: absolute;      
-        top: 50px;
-        right: 0;
+        margin-top: 10px;
+        padding: 0.5rem;
         width: 100%;
-        padding: 0.5 rem;
-        align-items: center;
-       
+        
+        align-items: center;   
         height: 90vh;
+        background-color: transparent;
+    }
+
+    nav ul li{
+        background-color: transparent;
+    }
+
+    nav ul li a {
+        
+        background-color: transparent;
+        text-decoration: none;
+        
     }
 
     .show {
         display: flex;
         flex-direction: column;  
-        background-color: black ;
+        background-color: #ffcad4; 
         justify-content: center;
+        top: 60px;
         
     }
 
     .hamburger {
         display: flex;        
         justify-content: flex-end;
-        padding: 10px;
+        padding: 15px;
+        background: transparent;
     }
 
     .hamburger svg {
-        fill: white;
+        fill: black;
         height: 25px;
         width: 25px;
         right: 5px;               
     }
     
-    h1{
-        font-size: 18px;
-    }
 
-    #portfolio {
-        scroll-margin-top: 20px ;    
-    }
-
-    .projecten {
-        grid-template-columns: 1fr;   
-     }
     
-    .project{
-        padding-top: 10px;         
-        min-height: fit-content;        
-    }
-
-    .project h1{
-        font-size: 1rem;
-        top: 10px;
-    }
-    
-    .tekst{
-        margin-top: 10px;
-        margin-bottom: 10px;        
-    }
-
-    .tekst p{       
-       padding: 10px;
-       font-size: 12px;       
-    }
-
-    .overmij_links {
-      
-        width: 100%;
-        height: 200px;
-        background-image: url('../afb/laptop-2.png');
-        background-size: cover;
-        background-position-y: 70%;
-        left: 0;
-        top: 0;
-        
-    }    
-
-    .overmij_rechts p{
-        font-size: 14px;
-        
-        width: 100%;
-        right:  20px;
-        left: 20px;                    
-    }
-
-    .overmij_rechts h1{
+    .titel h1{
+        font-size: 1.5rem;
         text-align: center;
-        align-items: center;
-        top: 10px;
        
     }
 
-    .welkom  h1{
-        font-size: 18px;
-    }    
+    a.btnPortfolio{
+        margin:auto;
+        text-align: center;
+        
+    }
+
+    
+
+    .welkom {        
+        width: 100%;              
+        justify-content: center;
+        align-items: center;
+        text-align: center;        
+    }
+
+    .welkom h1{         
+        font-size: 1.5rem;
+        text-align: center;        
+    }
+
+    .mijn_naam{
+        font-size: 1.5rem;
+    }
+
+    .home{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 100vh;
+        gap: 10px;          
+    }
+    .foto{
+        display: flex;       
+        justify-content: center;
+        align-items: center;        
+       
+        width: 50vw;
+        aspect-ratio: 1/1;
+        background: linear-gradient(to bottom, transparent, #ffcad4, transparent);
+        border-radius: 50%;
+        margin-top: 100px;
+    }
+    
+    .foto img{        
+         
+        width: 50vw;  
+        aspect-ratio: 1/1;             
+        border-radius: 50%;        
+    }
+    
+
+    #portfolio {
+        scroll-margin-top: 100px ;  
+        margin-top: 80px;  
+    }
+    
+
+    .projecten {
+        grid-template-columns: 1fr;   
+        width: 75%;
+     }
+    
+    .project{     
+        min-height: fit-content;  
+        
+    }
+    .project img{
+        padding: 10px;
+        width: 50%;
+    }
+
+    
+
+    .tekst p{       
+       padding: 10px;
+       font-size: 12px;    
+       width: 75%;   
+    }
+
+    
+
+    #over_mij {
+        scroll-margin-top: 80px ;    
+    }
+
+    
+
+    .about_text {
+        width: 80%;
+        min-height: 50vh;              
+    }
+
+    
+
+    .about_text p{
+        font-size: 14px;        
+        width: 95%;
+        padding: 0 20px;
+    }
+
+    .skills {
+      
+        width: 80%;     
+        display: grid;
+        
+        grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+        justify-items: center;
+        gap: 10px;
+    }  
+    .skill svg{
+        width: 50px;
+        height: 50px;        
+    }
+    
+
+    #contact {
+        margin-top: 80px ;    
+    }  
+
+    
     
   }
 
+@media (min-width:769px)  {
+    .skills {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        min-height: 10vh;
+        gap: 15px;
+        justify-items: center;
+        
+    }
+    .skill svg{
+        max-width: 80px;
+        max-height: 80px;   
+        padding: 15px;     
+    }
 
+    
+}
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .container-p {
+  .portfolio {
     justify-content: flex-start; /* content bovenaan */
     align-items: center;
   }
+
 }
