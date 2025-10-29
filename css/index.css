@@ -1,6 +1,6 @@
 
 html, body{   
-    min-height: 100vh;
+    min-height: 100dvh;
     background-size: cover;
     font-family: 'lato','san-serif';
     margin: 0;
@@ -83,9 +83,18 @@ a:hover{
     
     display: flex; 
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100dvh;   
+     
+}
+
+.landing-page {
+    display: flex; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100%;   
+    min-height: 100dvh;   
      
 }
 
@@ -94,7 +103,7 @@ a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;   
+    height: 100%;   
     padding: 10px;  
     gap: 10px;
     
@@ -121,7 +130,7 @@ section{
     height: 100%;
     width: 80%;
     background-color: transparent;
-   
+    
 }
 
 .mijn_naam{
@@ -137,7 +146,7 @@ section{
     justify-content: center;
     align-items: flex-start;  
     width: 100%;
-    max-height: 100vh;
+    max-height: 100%;
     padding-right: 0;
     
 }
@@ -227,7 +236,7 @@ section{
     
    width: 90%;  
    padding: 10px; 
-   min-height: 10vh;
+   min-height: 10%;
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
    gap: 10px;
@@ -247,7 +256,7 @@ section{
 
 .about_text {
     width: 90%;
-    min-height: 30vh;  
+    min-height: 30%;  
     border-radius: 15px;
     padding: 10px;
     background-color: whitesmoke;
@@ -427,7 +436,8 @@ footer p{
 
     .container {
         width: 100%;
-        min-height: 100%;        
+        min-height: 100%;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -436,7 +446,10 @@ footer p{
         
     }
 
-    
+    .landing-page {
+        justify-content: flex-start;
+    }
+
     nav {
         justify-content: space-between;
         align-items: center;
@@ -451,7 +464,7 @@ footer p{
         width: 100%;
         
         align-items: center;   
-        height: 90vh;
+        height: 90dvh;
         background-color: transparent;
     }
 
@@ -525,7 +538,7 @@ footer p{
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        min-height: 100vh;
+        height: 100%;
         gap: 10px;          
     }
     .foto{
@@ -586,7 +599,7 @@ footer p{
 
     .about_text {
         width: 80%;
-        min-height: 50vh;              
+        min-height: 50%;              
     }
 
     
@@ -623,7 +636,7 @@ footer p{
 @media (min-width:769px)  {
     .skills {
         grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-        min-height: 10vh;
+        min-height: 10%;
         gap: 15px;
         justify-items: center;
         
