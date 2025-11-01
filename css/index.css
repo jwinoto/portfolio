@@ -126,7 +126,7 @@ section{
     align-items: center;  
     justify-content: center;  
     padding: 10px;
-    gap: 25px;    
+    gap: 45px;    
     height: 100%;
     width: 80%;
     background-color: transparent;
@@ -134,7 +134,7 @@ section{
 }
 
 .mijn_naam{
-    color: #ffcad4;
+    color: #f49aaa;
     font-size: 3.5rem;
     font-weight: bold;
     font-family: arial;
@@ -145,7 +145,7 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;  
-    width: 100%;
+    width: 35vw;
     max-height: 100%;
     padding-right: 0;
     
@@ -166,26 +166,22 @@ section{
 }
 
 .foto{
-    display: flex;
-    
-    justify-content: center;
-   
-    align-items: center;  
-    width: 40vw;   
-      
-    aspect-ratio: 1/1;
-    
+    display: flex;   
+    justify-content: center;   
+    align-items: flex-end;  
+    width: 35vw;         
+    aspect-ratio: 1/1;    
     margin-top: 40px;
-    background: linear-gradient(to bottom, black, #ffcad4, transparent);
-    border-radius: 50%;
+    background: linear-gradient(135deg, black, #ffcad4, black);
+    border-radius: 50% 50% 0 0;
+    border: solid 1px black;
 }
 .foto img{
     
-    width: 40vw;
-   
+    width: 40vw;   
     aspect-ratio: 1/1;
     background-color: transparent;
-    border-radius: 50%;
+    
     
     
 }
@@ -213,8 +209,6 @@ section{
         opacity: 1;
     }
 }
-
-
 
 
 #over_mij{
