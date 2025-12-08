@@ -670,4 +670,8 @@ footer p{
     align-items: center;
   }
 
+  .home{
+    flex-direction: column;
+  }
+
 }
