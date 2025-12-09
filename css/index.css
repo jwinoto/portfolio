@@ -704,8 +704,9 @@ footer p{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 200px;
-        background: linear-gradient(to bottom, rgb(219, 215, 215), #ffcad4,rgb(219, 215, 215)) ;
+        height: 300px;
+        width: 100%;
+        background: linear-gradient(to bottom, transparent, #ffcad4,rgb(219, 215, 215)) ;
     }
 
 }
