@@ -664,7 +664,7 @@ footer p{
     
 }
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
 
   
   .portfolio {
@@ -699,5 +699,7 @@ footer p{
     .welkom {
         width: 100%;
     }
+
+
 
 }
