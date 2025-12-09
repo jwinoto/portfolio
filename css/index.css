@@ -709,4 +709,8 @@ footer p{
         background: linear-gradient(to bottom, transparent, #ffcad4,rgb(219, 215, 215)) ;
     }
 
+    .portfolio{
+        width: 100%;
+    }
+
 }
