@@ -700,6 +700,12 @@ footer p{
         width: 80%;
     }
 
-
+    .titel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        background: linear-gradient(to bottom, rgb(219, 215, 215), #ffcad4,rgb(219, 215, 215)) ;
+    }
 
 }
