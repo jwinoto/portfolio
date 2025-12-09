@@ -681,7 +681,7 @@ footer p{
         justify-content: center;
         align-items: center;              
         width: 70%;
-        height: 50vw;
+        height: auto;
         aspect-ratio: 1/1;
         background: linear-gradient(to bottom, transparent, #ffcad4, transparent);
         border-radius: 50%;
@@ -697,7 +697,7 @@ footer p{
     }
 
     .welkom {
-        width: 100%;
+        width: 80%;
     }
 
 
