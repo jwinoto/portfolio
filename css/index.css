@@ -447,8 +447,8 @@ section{
 }
 .ervaring h3 {
     font-size: 1.2rem;
-    text-align: center; 
-    margin: 5px 0 10px;    
+    margin: 5px 0 10px;
+    text-align: center;        
 }
 .ervaring i{
     line-height: 0;
@@ -787,7 +787,8 @@ footer p a{
     .bekend_met ul,
     .tools ul,
     .support ul {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));  
     }
   .portfolio {
     justify-content: flex-start; 
@@ -809,10 +810,7 @@ footer p a{
         width: 70%;
         height: 50vw;
         aspect-ratio: 1/1;
-        background: linear-gradient(to bottom, transparent, #ffcad4, transparent);
-        border-radius: 50%;
-        transform: translate(0);
-        animation: none;        
+        border-radius: 50%;       
     }
     
     .foto img{              
@@ -821,8 +819,6 @@ footer p a{
         aspect-ratio: 1/1;             
         border-radius: 50%;        
     }
-
-    
 
     .over_mij {
         flex-direction: column-reverse;        
