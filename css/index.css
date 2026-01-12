@@ -725,7 +725,6 @@ footer p a{
         padding: 10px;
         width: 50%;
     }
-
     
     .tekst p{       
        padding: 10px;
@@ -733,7 +732,9 @@ footer p a{
        width: 75%;   
     }
 
-    
+ .knoppen {
+        flex-direction: column;        
+    }   
 
     
     .over_mij {
