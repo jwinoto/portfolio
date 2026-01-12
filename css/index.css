@@ -447,11 +447,12 @@ section{
 }
 .ervaring h3 {
     font-size: 1.2rem;
-    text-align: center;        
+    text-align: center; 
+    margin: 5px 0 10px;    
 }
 .ervaring i{
     line-height: 0;
-    padding : 0 0 10px 0
+    margin : 0 0 30px 0;
 }
 .ervaring ul  {
     font-size: 1rem;    
