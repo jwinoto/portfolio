@@ -135,7 +135,7 @@ section{
 
 
 .welkom h5{    
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.75rem, 2.5vw, 1rem);
     font-family: lato, san-serif;
     margin: 5px 0 0;
     color: #ffffff;
