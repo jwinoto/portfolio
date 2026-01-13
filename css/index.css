@@ -107,9 +107,9 @@ section{
 
 .home {
     display: flex;
-    flex-direction: row;   
+    flex-direction: column;   
     align-items: center;  
-    justify-content: center;  
+    justify-content: space-between;  
     overflow: hidden;     
     height: 100vh;
     width: 100%;
@@ -128,7 +128,7 @@ section{
 
 
 .welkom h1{
-    font-size: clamp(1.5rem, 5vw, 3.5rem);
+    font-size: clamp(2rem, 5vw, 3.5rem);
     font-family: lato, san-serif;
     margin: 65px 0 0 5px;
 }
@@ -137,7 +137,7 @@ section{
 .welkom h5{    
     font-size: clamp(0.75rem, 2.5vw, 1rem);
     font-family: lato, san-serif;
-    margin: 5px 0 0;
+    margin: 5px 0;
     color: #ffffff;
     opacity: 0;
     animation: fadeIn 2s forwards 1s;
@@ -150,7 +150,7 @@ section{
 }
 
 .welkom button{
-    margin: 20px 0;
+    margin: 100px 0 0 0;
     padding: 10px 40px;
     font-size: 1rem;
     border: none;
@@ -178,7 +178,7 @@ section{
 .skills{
     
    width: 95%;  
-   padding: 20px; 
+   padding: 15px;
    min-height: 10%;
    display: flex;
    flex-direction: column;
@@ -241,7 +241,8 @@ section{
 /*over mij */
 
 #over_mij{
-    background: var(--second);   
+    background: var(--second);  
+    padding: 30px;
 }
 
 .over_mij {
@@ -251,55 +252,54 @@ section{
     justify-content: flex-start;
     align-items: center;
     gap: 10px;       
-    width: 90%;
+    width: 100%;
+    margin-top: 40px;
+    padding: 0;
     min-height: 100%;
 }
 .about_text {
-    width: 80%;
+    width: 70%;
     min-height: 30%;  
     border-radius: 15px;
-    padding: 10px;
-    margin: 40px;
-    
+      
 }
 
 .about_text p {
     font-size: 1rem;
-    height: auto;
-    padding: 0 20px ;
-   
-    
-    max-width: 95%;
-    
+    height: auto;  
+    max-width: 100%;    
 }
 
 .foto{
     display: flex;   
-    justify-content: flex-start;   
+    justify-content: center;   
     align-items: center;  
     width: 50%;  
-    height: 50vh;       
+    height: auto;       
  
 }
 .foto img{
     
     width: auto;  
-    height: 50vh ;    
+    height: 70vh ;    
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
     background-color: transparent;          
 }
 
 /* Portfolio Projecten */
 
+#portfolio{
+    scroll-margin-top: 80px ;     
+    background-color: var(--second);
+    
+}
+
 .portfolio {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin: 10px;
-    width: 90%;
-    min-height: 100%;
-    
+    min-height: 100%;    
 }
 
 .titel h1 {
@@ -334,14 +334,22 @@ section{
     color: var(--text-hover);
 }
 
+.projecten-container {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 30px;
+}
+
 .projecten {
     display: grid;   
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));   
-    width: 100%;
-    padding: 5px;
+    width: 100%;   
     gap: 10px;    
     justify-items: center;
-    min-height: 100%;
+    min-height: 100%;    
 }
 
 .project {
@@ -354,6 +362,7 @@ section{
     justify-content: space-between;
     align-items: center;
     gap:10px;    
+    
 }
 
 .content {
@@ -394,8 +403,6 @@ section{
     border-radius: 5px;  
 }
 
-
-
 .tekst {
     position: absolute;
     inset: 0;
@@ -417,13 +424,9 @@ section{
     text-align: center;
 }
 .project:hover .tekst {
-    opacity: 1;
-    
+    opacity: 1;   
 }
-.project:hover img {   
-    transform: scale(1.1);
-    cursor: pointer;    
-}
+
 
 .it_support {
     display: grid;   
@@ -460,12 +463,15 @@ section{
     margin: 0 0 20px 0;
     gap: 10px;    
 }
+
+
 /*contact*/
 
 #contact{
     
     background-color: transparent ;
-    height: 80dvh;    
+    height: 80dvh;   
+
 }
 
 .contact {
@@ -484,9 +490,19 @@ section{
     justify-content: center;
     align-items: center;
     padding: 10px;      
-    width: 80%;
-    
+    width: 80%; 
 }
+
+.contact_titel h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contact_titel p {
+    font-size: 1rem;
+    text-align: center;
+}
+
 .socials{ 
     display: flex;
     flex-direction: row;
@@ -542,7 +558,7 @@ section{
     fill: #716969;
 } 
 
-
+/*footer*/
 
 footer {
     
@@ -572,8 +588,7 @@ footer p a{
 
     .container {
         width: 100%;
-        min-height: 100%;
-        
+        min-height: 100%;        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -597,8 +612,7 @@ footer p a{
         position: absolute;      
         margin-top: 10px;
         padding: 0.5rem;
-        width: 100%;
-        
+        width: 100%;       
         align-items: center;   
         height: 100dvh;
         background-color: transparent;
@@ -617,13 +631,13 @@ footer p a{
     section {
         scroll-margin-top: 55px;
     }
+
     .show {
         display: flex;
         flex-direction: column;  
         background-color: var(--main-color); 
         justify-content: center;
-        top: 40px;
-          
+        top: 40px;     
     }
 
     .hamburger {
@@ -640,6 +654,7 @@ footer p a{
         right: 5px;               
     }
     
+
     
     .titel h1{
         font-size: 1.5rem;
@@ -661,20 +676,18 @@ footer p a{
         
     }
 
-    .welkom h1{         
+
+    .mijn_naam{
         font-size: 1.5rem;
-        text-align: center;        
     }
 
-
-    .home{
-        
-        flex-direction: column-reverse;
+    .home{        
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100%;
-                
+        height: 100%;                
     }
+
     .foto{
         display: flex;       
         justify-content: center;
@@ -700,14 +713,10 @@ footer p a{
         grid-template-columns: repeat(2, minmax(0, 1fr));   
     }
 
-    #portfolio {
-        scroll-margin-top: 100px ;  
-        margin-top: 80px;  
-        background-color: var(--second);
-    }
+    
     
     .projecten, .it_support {
-        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));   
+        grid-template-columns: repeat(auto-fit,minmax(270px,1fr));   
         width: 90%;
      }
     
@@ -726,10 +735,9 @@ footer p a{
        width: 75%;   
     }
 
- .knoppen {
+    .knoppen {
         flex-direction: column;        
-    }   
-
+    }
     
     .over_mij {
         flex-direction: column-reverse;        
@@ -740,26 +748,19 @@ footer p a{
     
 
     .about_text {
-        width: 80%;
-        min-height: 50%;              
+        width: 100%;
+        min-height: 50%;  
+        margin: 0 20px;            
     }
 
     
 
     .about_text p{
         font-size: 14px;        
-        width: 95%;
+        width: 90%;
         padding: 0 20px;
     }
 
-    
-
-    #contact {
-        margin-top: 80px ;    
-    }  
-
-    
-    
   }
 
 @media (min-width:769px)  {
@@ -770,9 +771,7 @@ footer p a{
     .support ul {
         flex-direction: row;
         
-    }
-
-    
+    } 
     
 }
 
