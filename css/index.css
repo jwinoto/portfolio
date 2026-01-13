@@ -60,11 +60,9 @@ a:hover{
 }
  
 .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-    background-color: var(--main-color);
+    display: none;    
+    cursor: pointer;   
+    background-color: transparent;
 }
 
 .wrapper {
@@ -178,7 +176,7 @@ section{
 .skills{
     
    width: 95%;  
-   padding: 15px;
+   padding: 10px;
    min-height: 10%;
    display: flex;
    flex-direction: column;
@@ -206,8 +204,7 @@ section{
 .skill h5{      
     color: black;    
     padding: 0 10px;
-    line-height: normal;
-    
+    line-height: normal;    
     width: auto;
     word-break: break-word;
     flex: 1;
@@ -327,6 +324,7 @@ section{
     color: black;
     font-weight: bold;
     cursor: pointer;
+    transition: transform 0.2s ease ;
 }
 
 .knoppen button:hover {
@@ -338,9 +336,8 @@ section{
     width: 95%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-    padding: 30px;
+    align-items: center;    
+    padding: 10px;
 }
 
 .projecten {
@@ -423,6 +420,7 @@ section{
     width: 90%;  
     text-align: center;
 }
+
 .project:hover .tekst {
     opacity: 1;   
 }
@@ -602,7 +600,7 @@ footer p a{
     }
 
     nav {
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         
     }
