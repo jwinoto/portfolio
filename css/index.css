@@ -715,8 +715,12 @@ footer p a{
     }
    
     .projecten, .it_support {
-        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));   
+        grid-template-columns: repeat(auto-fit,minmax(270px,1fr));   
         width: 90%;
+     }
+
+     .it_support p{
+        font-size: 0.75rem;
      }
     
     .project{     
