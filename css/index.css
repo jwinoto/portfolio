@@ -247,7 +247,7 @@ section{
     justify-content: flex-start;
     align-items: center;
     min-height: 100%;    
-    
+    padding:10px;
 }
 
 .titel h1 {
