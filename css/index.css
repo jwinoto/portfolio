@@ -1,11 +1,14 @@
 
 html, body{   
     min-height: 100dvh;
-    width: 100%;
     background-size: cover;
     font-family: 'Montserrat', 'sans-serif';
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -243,6 +246,7 @@ section{
     justify-content: flex-start;
     align-items: center;
     min-height: 100%;    
+    width: 100%;
 }
 
 .titel h1 {
@@ -497,7 +501,7 @@ section{
 footer {
     
     height: 40px;
-    padding: 10px;
+    /*padding: 10px;*/
     background : linear-gradient(135deg, var(--main-color), transparent);
     display: flex;
     align-items: center;
@@ -713,6 +717,7 @@ footer p a{
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));  
     }
+
   .portfolio {
     justify-content: flex-start; 
     align-items: center;
