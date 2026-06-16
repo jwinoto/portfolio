@@ -3,12 +3,13 @@ html, body{
     min-height: 100dvh;
     background-size: cover;
     font-family: 'Montserrat', 'sans-serif';
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    
+    
 }
 
 *, *::before, *::after {
+    margin: 0;
+    padding: 0
     box-sizing: border-box;
 }
 
