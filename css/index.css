@@ -334,7 +334,7 @@ section{
 
 .technologie ul{
     font-size: 1rem;    
-    width: 95%;  
+    width: 100%;  
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));    
     padding: 5px;
